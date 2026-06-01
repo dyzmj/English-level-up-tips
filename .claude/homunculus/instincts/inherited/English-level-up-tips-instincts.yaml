@@ -1,0 +1,500 @@
+# Instincts generated from https://github.com/dyzmj/English-level-up-tips
+# Generated: 2026-06-01T01:57:45.751Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: English-level-up-tips-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Commit Length
+
+## Action
+
+Keep commit messages concise (~10 characters)
+
+## Evidence
+
+- Average commit message length: 10 chars
+- Based on 100 commits
+
+---
+id: English-level-up-tips-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: English-level-up-tips-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: English-level-up-tips-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: English-level-up-tips-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: English-level-up-tips-workflow-update-readme-and-section-md
+trigger: "when doing update readme and section md"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Workflow Update Readme And Section Md
+
+## Action
+
+Follow the update-readme-and-section-md workflow:
+1. Edit README.md to add or update links/overview
+2. Edit or create a section markdown file (e.g., listening.md, reading.md, vocabulary.md)
+3. Commit both files together
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~6x per month
+- Files: README.md, *.md (section files like listening.md, reading.md, vocabulary.md, speaking.md, understanding.md)
+
+---
+id: English-level-up-tips-workflow-add-or-update-asset-image-and-readme
+trigger: "when doing add or update asset image and readme"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Workflow Add Or Update Asset Image And Readme
+
+## Action
+
+Follow the add-or-update-asset-image-and-readme workflow:
+1. Add or replace image file in assets/ (e.g., *.png, *.jpg)
+2. Update README.md to reference or describe the image
+3. Commit both files together
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: assets/*.png, assets/*.jpg, README.md
+
+---
+id: English-level-up-tips-workflow-minor-readme-edit
+trigger: "when doing minor readme edit"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Workflow Minor Readme Edit
+
+## Action
+
+Follow the minor-readme-edit workflow:
+1. Edit README.md for minor changes
+2. Optionally update .idea/workspace.xml (editor state)
+3. Commit changes
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~6x per month
+- Files: README.md, .idea/workspace.xml
+
+---
+id: English-level-up-tips-workflow-add-new-section
+trigger: "when doing add new section"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Workflow Add New Section
+
+## Action
+
+Follow the add-new-section workflow:
+1. Create new section markdown file (e.g., speaking.md, reading.md, understanding.md, vocabulary.md)
+2. Update README.md to link to the new section
+3. Commit both files together
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: README.md, *.md (new section file)
+
+---
+id: English-level-up-tips-workflow-update-section-md-only
+trigger: "when doing update section md only"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Workflow Update Section Md Only
+
+## Action
+
+Follow the update-section-md-only workflow:
+1. Edit section markdown file (e.g., vocabulary.md, listening.md, reading.md, understanding.md)
+2. Commit changes
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: *.md (section files, not README.md)
+
+---
+id: english-level-up-tips-instinct-file-naming
+trigger: "When creating a new file (TypeScript or markdown)"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct File Naming
+
+## Action
+
+Name files using camelCase (e.g., highFrequencyWords.ts, listening.md)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- No snake_case or kebab-case in examples
+
+---
+id: english-level-up-tips-instinct-function-naming
+trigger: "When defining a new function in TypeScript"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Function Naming
+
+## Action
+
+Use camelCase for function names (e.g., addSection, updateReadme)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: english-level-up-tips-instinct-class-naming
+trigger: "When defining a new class in TypeScript"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names (e.g., SectionManager)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: english-level-up-tips-instinct-constant-naming
+trigger: "When defining a constant in TypeScript"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names (e.g., MAX_SECTION_COUNT)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: english-level-up-tips-instinct-import-style
+trigger: "When importing modules in TypeScript"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Import Style
+
+## Action
+
+Use relative import paths (e.g., import { foo } from './foo')
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: english-level-up-tips-instinct-export-style
+trigger: "When exporting modules in TypeScript"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Export Style
+
+## Action
+
+Use named exports (e.g., export { foo })
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: english-level-up-tips-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- architecture.testLocation is 'separate'
+- No test files in srcLayout
+
+---
+id: english-level-up-tips-instinct-commit-format-freeform
+trigger: "When writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Commit Format Freeform
+
+## Action
+
+Use a freeform message, optionally starting with a Chinese verb or 'improve：', without strict prefixes
+
+## Evidence
+
+- commits.type is 'freeform'
+- Examples: 'improve：优化排版', '补充个人惨痛的学习经历'
+
+---
+id: english-level-up-tips-instinct-commit-length-short
+trigger: "When composing a commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Commit Length Short
+
+## Action
+
+Keep the message concise (around 10 words or less)
+
+## Evidence
+
+- commits.averageLength is 10
+- All commit examples are short
+
+---
+id: english-level-up-tips-instinct-update-readme-and-section
+trigger: "When adding or revising significant content in both the main README and a section file"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Update Readme And Section
+
+## Action
+
+Edit README.md and the relevant section markdown file, then commit both together
+
+## Evidence
+
+- Workflow: update-readme-and-section-md
+- Commit sequence and examples
+
+---
+id: english-level-up-tips-instinct-add-or-update-asset-image
+trigger: "When adding or updating an image asset (PNG, JPG) for documentation"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Add Or Update Asset Image
+
+## Action
+
+Add or replace the image in assets/, update README.md to reference it, and commit both together
+
+## Evidence
+
+- Workflow: add-or-update-asset-image-and-readme
+- Commit sequence and examples
+
+---
+id: english-level-up-tips-instinct-minor-readme-edit
+trigger: "When making minor wording, spelling, or formatting changes to README.md"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Minor Readme Edit
+
+## Action
+
+Edit README.md (and optionally .idea/workspace.xml), then commit changes
+
+## Evidence
+
+- Workflow: minor-readme-edit
+- Commit sequence and examples
+
+---
+id: english-level-up-tips-instinct-add-new-section
+trigger: "When expanding the guide with a new topic or skill area"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Add New Section
+
+## Action
+
+Create a new section markdown file, update README.md to link it, and commit both together
+
+## Evidence
+
+- Workflow: add-new-section
+- Commit sequence and examples
+
+---
+id: english-level-up-tips-instinct-update-section-md-only
+trigger: "When updating content in a specific section without changing the main README"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/English-level-up-tips
+---
+
+# English Level Up Tips Instinct Update Section Md Only
+
+## Action
+
+Edit the relevant section markdown file and commit the changes
+
+## Evidence
+
+- Workflow: update-section-md-only
+- Commit sequence and examples
+
